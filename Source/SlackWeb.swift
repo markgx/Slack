@@ -1,4 +1,6 @@
 import SwiftHTTP
+import SwiftyJSON
+import ObjectMapper
 
 public class SlackWeb {
   let baseURL = "https://slack.com/api/"
@@ -8,13 +10,148 @@ public class SlackWeb {
     self.token = token
   }
 
-  public func apiTest(params: [String: String], callback: (String?, NSError?) -> Void) {
-    httpRequest("api.test", params: params, callback: callback)
+  // https://api.slack.com/methods/api.test
+//  public func apiTest(params: [String: String], callback: (JSON?, NSError?) -> Void) {
+//    httpGetRequest("api.test", params: params, callback: callback)
+//  }
+
+  // https://api.slack.com/methods/auth.test
+  public func authTest(callback: (AuthTestResponse?, NSError?) -> Void) {
+    httpGetRequest("auth.test", params: [String: String]()) { json, error in
+      if error != nil {
+        callback(nil, error)
+        return
+      }
+
+      let response = Mapper<AuthTestResponse>().map(json)
+      callback(response, nil)
+    }
   }
 
-  public func httpRequest(path: String, params: [String: String], callback: (String?, NSError?) -> Void) {
+  // https://api.slack.com/methods/channels.info
+  public func channelsInfo(name: String, callback: (ChannelsInfoResponse?, NSError?) -> Void) {
+    httpGetRequest("channels.info", params: ["name": name]) { json, error in
+      if error != nil {
+        callback(nil, error)
+        return
+      }
+
+      let response = Mapper<ChannelsInfoResponse>().map(json)
+      callback(response, nil)
+    }
+  }
+
+  // https://api.slack.com/methods/channels.join
+  public func channelsJoin(name: String, callback: (ChannelsJoinResponse?, NSError?) -> Void) {
+    httpGetRequest("channels.join", params: ["name": name]) { json, error in
+      if error != nil {
+        callback(nil, error)
+        return
+      }
+
+      let response = Mapper<ChannelsJoinResponse>().map(json)
+      callback(response, nil)
+    }
+  }
+
+  // https://api.slack.com/methods/channels.leave
+  public func channelsLeave(channel: String, callback: (ChannelsLeaveResponse?, NSError?) -> Void) {
+    httpGetRequest("channels.leave", params: ["channel": channel]) { json, error in
+      if error != nil {
+        callback(nil, error)
+        return
+      }
+
+      let response = Mapper<ChannelsLeaveResponse>().map(json)
+      callback(response, nil)
+    }
+  }
+
+  // https://api.slack.com/methods/channels.list
+  public func channelsList(excludeArchived: Bool? = nil, callback: (ChannelsListResponse?, NSError?) -> Void) {
+    var params = [String : String]()
+
+    if let excludeArchivedBool = excludeArchived {
+      if excludeArchivedBool {
+        params["exclude_archived"] = "1"
+      } else {
+        params["exclude_archived"] = "0"
+      }
+    }
+
+    httpGetRequest("channels.list", params: params) { json, error in
+      if error != nil {
+        callback(nil, error)
+        return
+      }
+
+      let response = Mapper<ChannelsListResponse>().map(json)
+      callback(response, nil)
+    }
+  }
+
+  // https://api.slack.com/methods/chat.postMessage
+  public func chatPostMessage(channel: String, text: String, username: String? = nil, asUser: Bool? = nil,
+    parse: Bool? = nil, linkNames: Bool? = nil, attachments: [String: String]? = nil, unfurlLinks: Bool? = nil,
+    unfurlMedia: Bool? = nil, iconUrl: String? = nil, iconEmoji: String? = nil,
+    callback: (ChatPostMessageResponse?, NSError?) -> Void) {
+
+    var params = [
+      "channel": channel,
+      "text": text
+    ]
+
+    if username != nil {
+      params["username"] = username!
+    }
+
+    if asUser != nil {
+      params["as_user"] = asUser!.description
+    }
+
+    if parse != nil {
+      params["parse"] = parse!.description
+    }
+
+    if linkNames != nil {
+      params["link_names"] = linkNames!.description
+    }
+
+    // TODO: attachments
+
+    if unfurlLinks != nil {
+      params["unfurl_links"] = unfurlLinks!.description
+    }
+
+    if unfurlMedia != nil {
+      params["unfurl_media"] = unfurlMedia!.description
+    }
+
+    if iconUrl != nil {
+      params["icon_url"] = iconUrl!
+    }
+
+    if iconEmoji != nil {
+      params["icon_emoji"] = iconEmoji!
+    }
+
+    httpGetRequest("chat.postMessage", params: params) { json, error in
+      if error != nil {
+        callback(nil, error)
+        return
+      }
+
+      let response = Mapper<ChatPostMessageResponse>().map(json)
+      callback(response, nil)
+    }
+  }
+
+  public func httpGetRequest(path: String, params: [String: String], callback: (String?, NSError?) -> Void) {
     do {
-      let req = try HTTP.GET(baseURL + path, parameters: params)
+      var mergedParams = params
+      mergedParams["token"] = token
+
+      let req = try HTTP.GET(baseURL + path, parameters: mergedParams)
 
       req.start() { response in
         if let err = response.error {
@@ -22,10 +159,19 @@ public class SlackWeb {
           return
         }
 
+        let json = JSON(data: response.data)
+        debugPrint(String(data: response.data, encoding: NSUTF8StringEncoding))
+
+        if !json["ok"].boolValue {
+          callback(nil, NSError(domain: json["error"].stringValue, code: NSURLErrorBadServerResponse, userInfo: nil))
+          return
+        }
+
         callback(String(data: response.data, encoding: NSUTF8StringEncoding), nil)
       }
     } catch let error {
-      print("got an error creating the request: \(error)")
+      print("error: \(error)")
+      // TODO: return error
     }
   }
 }

@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D52AA851C2A51EB006B9E84 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D52AA841C2A51EB006B9E84 /* SwiftyJSON.framework */; };
+		4D52AA861C2A51F5006B9E84 /* SwiftyJSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D52AA841C2A51EB006B9E84 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4D52AA891C2A5244006B9E84 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D52AA881C2A5244006B9E84 /* SwiftyJSON.framework */; };
+		4D52AA8A1C2A5275006B9E84 /* SwiftyJSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D52AA881C2A5244006B9E84 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4D52AA8F1C2A8A5F006B9E84 /* Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D52AA8E1C2A8A5F006B9E84 /* Responses.swift */; };
+		4D52AA901C2A8A5F006B9E84 /* Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D52AA8E1C2A8A5F006B9E84 /* Responses.swift */; };
+		4D52AAC41C2D379C006B9E84 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D52AAC31C2D379C006B9E84 /* ObjectMapper.framework */; };
+		4D52AAC51C2D37AF006B9E84 /* ObjectMapper.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D52AAC31C2D379C006B9E84 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4D52AAC71C2D37D3006B9E84 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D52AAC61C2D37D3006B9E84 /* ObjectMapper.framework */; };
+		4D52AAC81C2D37EB006B9E84 /* ObjectMapper.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D52AAC61C2D37D3006B9E84 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4DC48E9D1C28F174000A2E54 /* Slack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC48E921C28F174000A2E54 /* Slack.framework */; };
 		4DC48EA21C28F175000A2E54 /* SlackWebTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC48EA11C28F175000A2E54 /* SlackWebTests.swift */; };
 		4DC48EAC1C28F210000A2E54 /* Slack.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DC48EAA1C28F210000A2E54 /* Slack.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -47,6 +57,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				4D52AAC81C2D37EB006B9E84 /* ObjectMapper.framework in CopyFiles */,
+				4D52AA8A1C2A5275006B9E84 /* SwiftyJSON.framework in CopyFiles */,
 				4DF3F1C01C2A428A00A6F057 /* SwiftHTTP.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,6 +69,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				4D52AAC51C2D37AF006B9E84 /* ObjectMapper.framework in CopyFiles */,
+				4D52AA861C2A51F5006B9E84 /* SwiftyJSON.framework in CopyFiles */,
 				4DF3F1C21C2A429C00A6F057 /* SwiftHTTP.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,6 +78,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4D52AA841C2A51EB006B9E84 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		4D52AA881C2A5244006B9E84 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/Mac/SwiftyJSON.framework; sourceTree = "<group>"; };
+		4D52AA8E1C2A8A5F006B9E84 /* Responses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Responses.swift; sourceTree = "<group>"; };
+		4D52AAC31C2D379C006B9E84 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		4D52AAC61C2D37D3006B9E84 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/Mac/ObjectMapper.framework; sourceTree = "<group>"; };
 		4DC48E921C28F174000A2E54 /* Slack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Slack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DC48E9C1C28F174000A2E54 /* Slack iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Slack iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DC48EA11C28F175000A2E54 /* SlackWebTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackWebTests.swift; sourceTree = "<group>"; };
@@ -83,6 +102,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D52AAC41C2D379C006B9E84 /* ObjectMapper.framework in Frameworks */,
+				4D52AA851C2A51EB006B9E84 /* SwiftyJSON.framework in Frameworks */,
 				4DF3F1BB1C2A423700A6F057 /* SwiftHTTP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,6 +120,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D52AAC71C2D37D3006B9E84 /* ObjectMapper.framework in Frameworks */,
+				4D52AA891C2A5244006B9E84 /* SwiftyJSON.framework in Frameworks */,
 				4DF3F1BD1C2A425000A6F057 /* SwiftHTTP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,13 +137,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D52AA871C2A5205006B9E84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D52AAC61C2D37D3006B9E84 /* ObjectMapper.framework */,
+				4D52AAC31C2D379C006B9E84 /* ObjectMapper.framework */,
+				4D52AA881C2A5244006B9E84 /* SwiftyJSON.framework */,
+				4D52AA841C2A51EB006B9E84 /* SwiftyJSON.framework */,
+				4DF3F1BC1C2A425000A6F057 /* SwiftHTTP.framework */,
+				4DF3F1BA1C2A423700A6F057 /* SwiftHTTP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D52AA941C2A9CA7006B9E84 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4D52AA8E1C2A8A5F006B9E84 /* Responses.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		4DC48E861C28F152000A2E54 = {
 			isa = PBXGroup;
 			children = (
-				4DF3F1BC1C2A425000A6F057 /* SwiftHTTP.framework */,
-				4DF3F1BA1C2A423700A6F057 /* SwiftHTTP.framework */,
 				4DC48EAE1C28F217000A2E54 /* Source */,
 				4DC48EA01C28F174000A2E54 /* Tests */,
+				4D52AA871C2A5205006B9E84 /* Frameworks */,
 				4DC48E931C28F174000A2E54 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -148,6 +191,7 @@
 		4DC48EAE1C28F217000A2E54 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				4D52AA941C2A9CA7006B9E84 /* Models */,
 				4DC48EAA1C28F210000A2E54 /* Slack.h */,
 				4DC48EAB1C28F210000A2E54 /* Info.plist */,
 				4DC48EAF1C28F250000A2E54 /* SlackWeb.swift */,
@@ -331,6 +375,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D52AA8F1C2A8A5F006B9E84 /* Responses.swift in Sources */,
 				4DC48ED21C28F756000A2E54 /* SlackRTM.swift in Sources */,
 				4DC48EB01C28F250000A2E54 /* SlackWeb.swift in Sources */,
 			);
@@ -348,6 +393,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D52AA901C2A8A5F006B9E84 /* Responses.swift in Sources */,
 				4DC48ED31C28F756000A2E54 /* SlackRTM.swift in Sources */,
 				4DC48ECE1C28F525000A2E54 /* SlackWeb.swift in Sources */,
 			);
@@ -528,6 +574,10 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -576,6 +626,10 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
