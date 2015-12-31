@@ -138,3 +138,101 @@ public struct RTMStartResponse: Mappable {
     url <- map["url"]
   }
 }
+
+// Users
+
+public struct UsersGetPresenceResponse: Mappable {
+  public var presence: String?
+  public var online: Bool?
+  public var autoAway: Bool?
+  public var manualAway: Bool?
+  public var connectionCount: Int?
+  public var lastActivity: NSDate?
+
+  public init?(_ map: Map) { }
+
+  public mutating func mapping(map: Map) {
+    presence        <- map["presence"]
+    online          <- map["online"]
+    autoAway        <- map["auto_away"]
+    manualAway      <- map["manual_away"]
+    connectionCount <- map["connection_count"]
+    lastActivity    <- (map["last_activity"], DateTransform())
+  }
+}
+
+public struct UsersInfoResponse: Mappable {
+  public var user: UserResponse?
+
+  public init?(_ map: Map) { }
+
+  public mutating func mapping(map: Map) {
+    user <- map["user"]
+  }
+}
+
+public struct UserResponse: Mappable {
+  public var id: String?
+  public var name: String?
+  public var deleted: Bool?
+  public var color: String?
+  public var profile: ProfileResponse?
+  public var isAdmin: Bool?
+  public var isOwner: Bool?
+  public var has2fa: Bool?
+  public var hasFiles: Bool?
+
+  public init?(_ map: Map) { }
+
+  public mutating func mapping(map: Map) {
+    id         <- map["id"]
+    name       <- map["name"]
+    deleted    <- map["deleted"]
+    color      <- map["color"]
+    profile    <- map["profile"]
+    isAdmin    <- map["is_admin"]
+    isOwner    <- map["is_owner"]
+    has2fa     <- map["has_2fa"]
+    hasFiles   <- map["has_files"]
+  }
+
+  public struct ProfileResponse: Mappable {
+    public var firstName: String?
+    public var lastName: String?
+    public var realName: String?
+    public var email: String?
+    public var skype: String?
+    public var phone: String?
+    public var image24: String?
+    public var image32: String?
+    public var image48: String?
+    public var image72: String?
+    public var image192: String?
+
+    public init?(_ map: Map) { }
+
+    public mutating func mapping(map: Map) {
+      firstName <- map["first_name"]
+      lastName  <- map["last_name"]
+      realName  <- map["real_name"]
+      email     <- map["email"]
+      skype     <- map["skype"]
+      phone     <- map["phone"]
+      image24   <- map["image_24"]
+      image32   <- map["image_32"]
+      image48   <- map["image_48"]
+      image72   <- map["image_72"]
+      image192  <- map["image_192"]
+    }
+  }
+}
+
+public struct UsersListResponse: Mappable {
+  public var members: [UserResponse]?
+
+  public init?(_ map: Map) { }
+
+  public mutating func mapping(map: Map) {
+    members <- map["members"]
+  }
+}

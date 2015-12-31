@@ -27,6 +27,8 @@
 		4DC48ECF1C28F5FC000A2E54 /* SlackWebTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC48EA11C28F175000A2E54 /* SlackWebTests.swift */; };
 		4DC48ED21C28F756000A2E54 /* SlackRTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC48ED11C28F756000A2E54 /* SlackRTM.swift */; };
 		4DC48ED31C28F756000A2E54 /* SlackRTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC48ED11C28F756000A2E54 /* SlackRTM.swift */; };
+		4DEE13D81C351E48002FD175 /* SlackWebEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEE13D71C351E48002FD175 /* SlackWebEnums.swift */; };
+		4DEE13D91C351E48002FD175 /* SlackWebEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEE13D71C351E48002FD175 /* SlackWebEnums.swift */; };
 		4DF35CEE1C33284600DF3440 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DF35CED1C33284600DF3440 /* Starscream.framework */; };
 		4DF35CF01C33285A00DF3440 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DF35CEF1C33285A00DF3440 /* Starscream.framework */; };
 		4DF35CF11C33286700DF3440 /* Starscream.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 4DF35CED1C33284600DF3440 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -98,15 +100,16 @@
 		4D52AAC61C2D37D3006B9E84 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/Mac/ObjectMapper.framework; sourceTree = "<group>"; };
 		4D62B37E1C34BD42007EB5EB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4DC48E921C28F174000A2E54 /* Slack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Slack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4DC48E9C1C28F174000A2E54 /* Slack iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Slack iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DC48E9C1C28F174000A2E54 /* Slack Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Slack Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DC48EA11C28F175000A2E54 /* SlackWebTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackWebTests.swift; sourceTree = "<group>"; };
 		4DC48EA31C28F175000A2E54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DC48EAA1C28F210000A2E54 /* Slack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Slack.h; sourceTree = "<group>"; };
 		4DC48EAB1C28F210000A2E54 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DC48EAF1C28F250000A2E54 /* SlackWeb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlackWeb.swift; sourceTree = "<group>"; };
 		4DC48EB61C28F481000A2E54 /* Slack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Slack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4DC48EBF1C28F481000A2E54 /* Slack Mac Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Slack Mac Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DC48EBF1C28F481000A2E54 /* Slack Tests Mac.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Slack Tests Mac.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DC48ED11C28F756000A2E54 /* SlackRTM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlackRTM.swift; sourceTree = "<group>"; };
+		4DEE13D71C351E48002FD175 /* SlackWebEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlackWebEnums.swift; sourceTree = "<group>"; };
 		4DF35CED1C33284600DF3440 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
 		4DF35CEF1C33285A00DF3440 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/Mac/Starscream.framework; sourceTree = "<group>"; };
 		4DF35D001C33350000DF3440 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
@@ -179,6 +182,7 @@
 				4D52AA8E1C2A8A5F006B9E84 /* SlackWebResponses.swift */,
 				4DF35D081C33461600DF3440 /* SlackRTMResponses.swift */,
 				4DF35D001C33350000DF3440 /* Errors.swift */,
+				4DEE13D71C351E48002FD175 /* SlackWebEnums.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -198,9 +202,9 @@
 			isa = PBXGroup;
 			children = (
 				4DC48E921C28F174000A2E54 /* Slack.framework */,
-				4DC48E9C1C28F174000A2E54 /* Slack iOS Tests.xctest */,
+				4DC48E9C1C28F174000A2E54 /* Slack Tests iOS.xctest */,
 				4DC48EB61C28F481000A2E54 /* Slack.framework */,
-				4DC48EBF1C28F481000A2E54 /* Slack Mac Tests.xctest */,
+				4DC48EBF1C28F481000A2E54 /* Slack Tests Mac.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -268,9 +272,9 @@
 			productReference = 4DC48E921C28F174000A2E54 /* Slack.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4DC48E9B1C28F174000A2E54 /* Slack iOS Tests */ = {
+		4DC48E9B1C28F174000A2E54 /* Slack Tests iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4DC48EA71C28F175000A2E54 /* Build configuration list for PBXNativeTarget "Slack iOS Tests" */;
+			buildConfigurationList = 4DC48EA71C28F175000A2E54 /* Build configuration list for PBXNativeTarget "Slack Tests iOS" */;
 			buildPhases = (
 				4DC48E981C28F174000A2E54 /* Sources */,
 				4DC48E991C28F174000A2E54 /* Frameworks */,
@@ -281,9 +285,9 @@
 			dependencies = (
 				4DC48E9F1C28F174000A2E54 /* PBXTargetDependency */,
 			);
-			name = "Slack iOS Tests";
+			name = "Slack Tests iOS";
 			productName = SlackTests;
-			productReference = 4DC48E9C1C28F174000A2E54 /* Slack iOS Tests.xctest */;
+			productReference = 4DC48E9C1C28F174000A2E54 /* Slack Tests iOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		4DC48EB51C28F481000A2E54 /* Slack Mac */ = {
@@ -305,9 +309,9 @@
 			productReference = 4DC48EB61C28F481000A2E54 /* Slack.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4DC48EBE1C28F481000A2E54 /* Slack Mac Tests */ = {
+		4DC48EBE1C28F481000A2E54 /* Slack Tests Mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4DC48ECA1C28F481000A2E54 /* Build configuration list for PBXNativeTarget "Slack Mac Tests" */;
+			buildConfigurationList = 4DC48ECA1C28F481000A2E54 /* Build configuration list for PBXNativeTarget "Slack Tests Mac" */;
 			buildPhases = (
 				4DC48EBB1C28F481000A2E54 /* Sources */,
 				4DC48EBC1C28F481000A2E54 /* Frameworks */,
@@ -318,9 +322,9 @@
 			dependencies = (
 				4DC48EC21C28F481000A2E54 /* PBXTargetDependency */,
 			);
-			name = "Slack Mac Tests";
+			name = "Slack Tests Mac";
 			productName = SlackTests;
-			productReference = 4DC48EBF1C28F481000A2E54 /* Slack Mac Tests.xctest */;
+			productReference = 4DC48EBF1C28F481000A2E54 /* Slack Tests Mac.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -359,9 +363,9 @@
 			projectRoot = "";
 			targets = (
 				4DC48E911C28F174000A2E54 /* Slack iOS */,
-				4DC48E9B1C28F174000A2E54 /* Slack iOS Tests */,
+				4DC48E9B1C28F174000A2E54 /* Slack Tests iOS */,
 				4DC48EB51C28F481000A2E54 /* Slack Mac */,
-				4DC48EBE1C28F481000A2E54 /* Slack Mac Tests */,
+				4DC48EBE1C28F481000A2E54 /* Slack Tests Mac */,
 			);
 		};
 /* End PBXProject section */
@@ -406,6 +410,7 @@
 				4D52AA8F1C2A8A5F006B9E84 /* SlackWebResponses.swift in Sources */,
 				4DF35D091C33461600DF3440 /* SlackRTMResponses.swift in Sources */,
 				4DC48ED21C28F756000A2E54 /* SlackRTM.swift in Sources */,
+				4DEE13D81C351E48002FD175 /* SlackWebEnums.swift in Sources */,
 				4DC48EB01C28F250000A2E54 /* SlackWeb.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +432,7 @@
 				4D52AA901C2A8A5F006B9E84 /* SlackWebResponses.swift in Sources */,
 				4DF35D0A1C33461600DF3440 /* SlackRTMResponses.swift in Sources */,
 				4DC48ED31C28F756000A2E54 /* SlackRTM.swift in Sources */,
+				4DEE13D91C351E48002FD175 /* SlackWebEnums.swift in Sources */,
 				4DC48ECE1C28F525000A2E54 /* SlackWeb.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -913,7 +919,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4DC48EA71C28F175000A2E54 /* Build configuration list for PBXNativeTarget "Slack iOS Tests" */ = {
+		4DC48EA71C28F175000A2E54 /* Build configuration list for PBXNativeTarget "Slack Tests iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4DC48EA81C28F175000A2E54 /* Debug */,
@@ -931,7 +937,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4DC48ECA1C28F481000A2E54 /* Build configuration list for PBXNativeTarget "Slack Mac Tests" */ = {
+		4DC48ECA1C28F481000A2E54 /* Build configuration list for PBXNativeTarget "Slack Tests Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4DC48ECB1C28F481000A2E54 /* Debug */,

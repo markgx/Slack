@@ -175,6 +175,75 @@ public class SlackWeb {
     }
   }
 
+  // https://api.slack.com/methods/users.getPresence
+  public func usersGetPresence(user: String, callback: (UsersGetPresenceResponse?, NSError?) -> Void) {
+    httpGetRequest("users.getPresence", params: ["user": user]) { json, error in
+      if error != nil {
+        callback(nil, error)
+        return
+      }
+
+      let response = Mapper<UsersGetPresenceResponse>().map(json)
+      callback(response, nil)
+    }
+  }
+
+  // https://api.slack.com/methods/users.info
+  public func usersInfo(user: String, callback: (UsersInfoResponse?, NSError?) -> Void) {
+    httpGetRequest("users.info", params: ["user": user]) { json, error in
+      if error != nil {
+        callback(nil, error)
+        return
+      }
+
+      let response = Mapper<UsersInfoResponse>().map(json)
+      callback(response, nil)
+    }
+  }
+
+  // https://api.slack.com/methods/users.list
+  public func usersList(presence: Bool? = nil, callback: (UsersListResponse?, NSError?) -> Void) {
+    var params = [String: String]()
+
+    if let presenceBool = presence {
+      params["presence"] = presenceBool ? "1" : "0"
+    }
+
+    httpGetRequest("users.list", params: params) { json, error in
+      if error != nil {
+        callback(nil, error)
+        return
+      }
+
+      let response = Mapper<UsersListResponse>().map(json)
+      callback(response, nil)
+    }
+  }
+
+  // https://api.slack.com/methods/users.setActive
+  public func usersSetActive(callback: (NSError?) -> Void) {
+    httpGetRequest("users.setActive", params: [String: String]()) { json, error in
+      if error != nil {
+        callback(error)
+        return
+      }
+
+      callback(nil)
+    }
+  }
+
+  // https://api.slack.com/methods/users.setPresence
+  public func usersSetPresence(presence: Presence, callback: (NSError?) -> Void) {
+    httpGetRequest("users.setPresence", params: ["presence": presence.rawValue]) { json, error in
+      if error != nil {
+        callback(error)
+        return
+      }
+
+      callback(nil)
+    }
+  }
+
   public func httpGetRequest(path: String, params: [String: String], callback: (String?, NSError?) -> Void) {
     do {
       var mergedParams = params
