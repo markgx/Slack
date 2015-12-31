@@ -146,6 +146,35 @@ public class SlackWeb {
     }
   }
 
+  // https://api.slack.com/methods/rtm.start
+  public func rtmStart(simpleLatest: Bool? = nil, noUnreads: Bool? = nil, mpimAware: Bool? = nil,
+    callback: (RTMStartResponse?, NSError?) -> Void) {
+
+    var params = [String : String]()
+
+    if simpleLatest != nil {
+      params["simple_latest"] = simpleLatest!.description
+    }
+
+    if noUnreads != nil {
+      params["no_unreads"] = noUnreads!.description
+    }
+
+    if mpimAware != nil {
+      params["mpim_aware"] = mpimAware!.description
+    }
+
+    httpGetRequest("rtm.start", params: params) { json, error in
+      if error != nil {
+        callback(nil, error)
+        return
+      }
+
+      let response = Mapper<RTMStartResponse>().map(json)
+      callback(response, nil)
+    }
+  }
+
   public func httpGetRequest(path: String, params: [String: String], callback: (String?, NSError?) -> Void) {
     do {
       var mergedParams = params

@@ -1,3 +1,4 @@
 github "Hearst-DD/ObjectMapper" "1.0.1"
+github "daltoniam/Starscream" "1.0.2"
 github "daltoniam/SwiftHTTP" "1.0.2"
 github "SwiftyJSON/SwiftyJSON" "2.3.3"

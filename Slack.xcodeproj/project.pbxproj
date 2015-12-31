@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		4D52AA851C2A51EB006B9E84 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D52AA841C2A51EB006B9E84 /* SwiftyJSON.framework */; };
-		4D52AA861C2A51F5006B9E84 /* SwiftyJSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D52AA841C2A51EB006B9E84 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4D52AA861C2A51F5006B9E84 /* SwiftyJSON.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 4D52AA841C2A51EB006B9E84 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4D52AA891C2A5244006B9E84 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D52AA881C2A5244006B9E84 /* SwiftyJSON.framework */; };
 		4D52AA8A1C2A5275006B9E84 /* SwiftyJSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D52AA881C2A5244006B9E84 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4D52AA8F1C2A8A5F006B9E84 /* Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D52AA8E1C2A8A5F006B9E84 /* Responses.swift */; };
-		4D52AA901C2A8A5F006B9E84 /* Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D52AA8E1C2A8A5F006B9E84 /* Responses.swift */; };
+		4D52AA8F1C2A8A5F006B9E84 /* SlackWebResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D52AA8E1C2A8A5F006B9E84 /* SlackWebResponses.swift */; };
+		4D52AA901C2A8A5F006B9E84 /* SlackWebResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D52AA8E1C2A8A5F006B9E84 /* SlackWebResponses.swift */; };
 		4D52AAC41C2D379C006B9E84 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D52AAC31C2D379C006B9E84 /* ObjectMapper.framework */; };
-		4D52AAC51C2D37AF006B9E84 /* ObjectMapper.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D52AAC31C2D379C006B9E84 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4D52AAC51C2D37AF006B9E84 /* ObjectMapper.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 4D52AAC31C2D379C006B9E84 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4D52AAC71C2D37D3006B9E84 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D52AAC61C2D37D3006B9E84 /* ObjectMapper.framework */; };
 		4D52AAC81C2D37EB006B9E84 /* ObjectMapper.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D52AAC61C2D37D3006B9E84 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4DC48E9D1C28F174000A2E54 /* Slack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC48E921C28F174000A2E54 /* Slack.framework */; };
@@ -27,10 +27,20 @@
 		4DC48ECF1C28F5FC000A2E54 /* SlackWebTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC48EA11C28F175000A2E54 /* SlackWebTests.swift */; };
 		4DC48ED21C28F756000A2E54 /* SlackRTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC48ED11C28F756000A2E54 /* SlackRTM.swift */; };
 		4DC48ED31C28F756000A2E54 /* SlackRTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC48ED11C28F756000A2E54 /* SlackRTM.swift */; };
+		4DF35CEE1C33284600DF3440 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DF35CED1C33284600DF3440 /* Starscream.framework */; };
+		4DF35CF01C33285A00DF3440 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DF35CEF1C33285A00DF3440 /* Starscream.framework */; };
+		4DF35CF11C33286700DF3440 /* Starscream.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 4DF35CED1C33284600DF3440 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4DF35CF21C33287100DF3440 /* Starscream.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DF35CEF1C33285A00DF3440 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4DF35D011C33350000DF3440 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF35D001C33350000DF3440 /* Errors.swift */; };
+		4DF35D021C33350000DF3440 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF35D001C33350000DF3440 /* Errors.swift */; };
+		4DF35D061C333D7E00DF3440 /* SlackRTMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF35D031C333D5400DF3440 /* SlackRTMTests.swift */; };
+		4DF35D071C333D8000DF3440 /* SlackRTMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF35D031C333D5400DF3440 /* SlackRTMTests.swift */; };
+		4DF35D091C33461600DF3440 /* SlackRTMResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF35D081C33461600DF3440 /* SlackRTMResponses.swift */; };
+		4DF35D0A1C33461600DF3440 /* SlackRTMResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF35D081C33461600DF3440 /* SlackRTMResponses.swift */; };
 		4DF3F1BB1C2A423700A6F057 /* SwiftHTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DF3F1BA1C2A423700A6F057 /* SwiftHTTP.framework */; };
 		4DF3F1BD1C2A425000A6F057 /* SwiftHTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DF3F1BC1C2A425000A6F057 /* SwiftHTTP.framework */; };
 		4DF3F1C01C2A428A00A6F057 /* SwiftHTTP.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DF3F1BC1C2A425000A6F057 /* SwiftHTTP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4DF3F1C21C2A429C00A6F057 /* SwiftHTTP.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DF3F1BA1C2A423700A6F057 /* SwiftHTTP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4DF3F1C21C2A429C00A6F057 /* SwiftHTTP.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 4DF3F1BA1C2A423700A6F057 /* SwiftHTTP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,22 +67,25 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				4DF35CF21C33287100DF3440 /* Starscream.framework in CopyFiles */,
 				4D52AAC81C2D37EB006B9E84 /* ObjectMapper.framework in CopyFiles */,
 				4D52AA8A1C2A5275006B9E84 /* SwiftyJSON.framework in CopyFiles */,
 				4DF3F1C01C2A428A00A6F057 /* SwiftHTTP.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4DF3F1C11C2A429400A6F057 /* CopyFiles */ = {
+		4DF3F1C11C2A429400A6F057 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4D52AAC51C2D37AF006B9E84 /* ObjectMapper.framework in CopyFiles */,
-				4D52AA861C2A51F5006B9E84 /* SwiftyJSON.framework in CopyFiles */,
-				4DF3F1C21C2A429C00A6F057 /* SwiftHTTP.framework in CopyFiles */,
+				4DF35CF11C33286700DF3440 /* Starscream.framework in Copy Files */,
+				4D52AAC51C2D37AF006B9E84 /* ObjectMapper.framework in Copy Files */,
+				4D52AA861C2A51F5006B9E84 /* SwiftyJSON.framework in Copy Files */,
+				4DF3F1C21C2A429C00A6F057 /* SwiftHTTP.framework in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -80,7 +93,7 @@
 /* Begin PBXFileReference section */
 		4D52AA841C2A51EB006B9E84 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		4D52AA881C2A5244006B9E84 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/Mac/SwiftyJSON.framework; sourceTree = "<group>"; };
-		4D52AA8E1C2A8A5F006B9E84 /* Responses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Responses.swift; sourceTree = "<group>"; };
+		4D52AA8E1C2A8A5F006B9E84 /* SlackWebResponses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlackWebResponses.swift; sourceTree = "<group>"; };
 		4D52AAC31C2D379C006B9E84 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		4D52AAC61C2D37D3006B9E84 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/Mac/ObjectMapper.framework; sourceTree = "<group>"; };
 		4DC48E921C28F174000A2E54 /* Slack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Slack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +106,11 @@
 		4DC48EB61C28F481000A2E54 /* Slack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Slack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DC48EBF1C28F481000A2E54 /* Slack Mac Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Slack Mac Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DC48ED11C28F756000A2E54 /* SlackRTM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlackRTM.swift; sourceTree = "<group>"; };
+		4DF35CED1C33284600DF3440 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
+		4DF35CEF1C33285A00DF3440 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/Mac/Starscream.framework; sourceTree = "<group>"; };
+		4DF35D001C33350000DF3440 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		4DF35D031C333D5400DF3440 /* SlackRTMTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlackRTMTests.swift; sourceTree = "<group>"; };
+		4DF35D081C33461600DF3440 /* SlackRTMResponses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlackRTMResponses.swift; sourceTree = "<group>"; };
 		4DF3F1BA1C2A423700A6F057 /* SwiftHTTP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftHTTP.framework; path = Carthage/Build/iOS/SwiftHTTP.framework; sourceTree = "<group>"; };
 		4DF3F1BC1C2A425000A6F057 /* SwiftHTTP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftHTTP.framework; path = Carthage/Build/Mac/SwiftHTTP.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DF35CEE1C33284600DF3440 /* Starscream.framework in Frameworks */,
 				4D52AAC41C2D379C006B9E84 /* ObjectMapper.framework in Frameworks */,
 				4D52AA851C2A51EB006B9E84 /* SwiftyJSON.framework in Frameworks */,
 				4DF3F1BB1C2A423700A6F057 /* SwiftHTTP.framework in Frameworks */,
@@ -120,6 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DF35CF01C33285A00DF3440 /* Starscream.framework in Frameworks */,
 				4D52AAC71C2D37D3006B9E84 /* ObjectMapper.framework in Frameworks */,
 				4D52AA891C2A5244006B9E84 /* SwiftyJSON.framework in Frameworks */,
 				4DF3F1BD1C2A425000A6F057 /* SwiftHTTP.framework in Frameworks */,
@@ -140,6 +160,8 @@
 		4D52AA871C2A5205006B9E84 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4DF35CEF1C33285A00DF3440 /* Starscream.framework */,
+				4DF35CED1C33284600DF3440 /* Starscream.framework */,
 				4D52AAC61C2D37D3006B9E84 /* ObjectMapper.framework */,
 				4D52AAC31C2D379C006B9E84 /* ObjectMapper.framework */,
 				4D52AA881C2A5244006B9E84 /* SwiftyJSON.framework */,
@@ -153,7 +175,9 @@
 		4D52AA941C2A9CA7006B9E84 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				4D52AA8E1C2A8A5F006B9E84 /* Responses.swift */,
+				4D52AA8E1C2A8A5F006B9E84 /* SlackWebResponses.swift */,
+				4DF35D081C33461600DF3440 /* SlackRTMResponses.swift */,
+				4DF35D001C33350000DF3440 /* Errors.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -183,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				4DC48EA11C28F175000A2E54 /* SlackWebTests.swift */,
+				4DF35D031C333D5400DF3440 /* SlackRTMTests.swift */,
 				4DC48EA31C28F175000A2E54 /* Info.plist */,
 			);
 			path = Tests;
@@ -230,7 +255,7 @@
 				4DC48E8E1C28F174000A2E54 /* Frameworks */,
 				4DC48E8F1C28F174000A2E54 /* Headers */,
 				4DC48E901C28F174000A2E54 /* Resources */,
-				4DF3F1C11C2A429400A6F057 /* CopyFiles */,
+				4DF3F1C11C2A429400A6F057 /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -375,7 +400,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D52AA8F1C2A8A5F006B9E84 /* Responses.swift in Sources */,
+				4DF35D011C33350000DF3440 /* Errors.swift in Sources */,
+				4D52AA8F1C2A8A5F006B9E84 /* SlackWebResponses.swift in Sources */,
+				4DF35D091C33461600DF3440 /* SlackRTMResponses.swift in Sources */,
 				4DC48ED21C28F756000A2E54 /* SlackRTM.swift in Sources */,
 				4DC48EB01C28F250000A2E54 /* SlackWeb.swift in Sources */,
 			);
@@ -385,6 +412,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DF35D061C333D7E00DF3440 /* SlackRTMTests.swift in Sources */,
 				4DC48EA21C28F175000A2E54 /* SlackWebTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,7 +421,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D52AA901C2A8A5F006B9E84 /* Responses.swift in Sources */,
+				4DF35D021C33350000DF3440 /* Errors.swift in Sources */,
+				4D52AA901C2A8A5F006B9E84 /* SlackWebResponses.swift in Sources */,
+				4DF35D0A1C33461600DF3440 /* SlackRTMResponses.swift in Sources */,
 				4DC48ED31C28F756000A2E54 /* SlackRTM.swift in Sources */,
 				4DC48ECE1C28F525000A2E54 /* SlackWeb.swift in Sources */,
 			);
@@ -403,6 +433,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DF35D071C333D8000DF3440 /* SlackRTMTests.swift in Sources */,
 				4DC48ECF1C28F5FC000A2E54 /* SlackWebTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -680,6 +711,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -743,6 +775,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_C_LANGUAGE_STANDARD = gnu99;

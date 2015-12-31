@@ -126,3 +126,15 @@ public struct ChatPostMessageResponse: Mappable {
     channel <- map["channel"]
   }
 }
+
+// RTM
+
+public struct RTMStartResponse: Mappable {
+  public var url: String?
+
+  public init?(_ map: Map) { }
+
+  public mutating func mapping(map: Map) {
+    url <- map["url"]
+  }
+}

@@ -4,6 +4,7 @@ import XCTest
 class SlackWebTests: XCTestCase {
   let token = "MY_TOKEN"
   let testChannel = "MY_CHANNEL"
+  let timeout = 60.0
 
   func testAuthTest() {
     let api = SlackWeb(token: token)
@@ -72,6 +73,18 @@ class SlackWebTests: XCTestCase {
     let expectation = expectationWithDescription("chat.postMessage")
 
     api.chatPostMessage(testChannel, text: "hi", asUser: true) { response, error in
+      // TODO: assert result
+      expectation.fulfill()
+    }
+
+    waitForExpectationsWithTimeout(60, handler: nil)
+  }
+
+  func testRtmStart() {
+    let api = SlackWeb(token: token)
+    let expectation = expectationWithDescription("rtm.start")
+
+    api.rtmStart(true) { response, error in
       // TODO: assert result
       expectation.fulfill()
     }
