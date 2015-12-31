@@ -96,6 +96,7 @@
 		4D52AA8E1C2A8A5F006B9E84 /* SlackWebResponses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlackWebResponses.swift; sourceTree = "<group>"; };
 		4D52AAC31C2D379C006B9E84 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		4D52AAC61C2D37D3006B9E84 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/Mac/ObjectMapper.framework; sourceTree = "<group>"; };
+		4D62B37E1C34BD42007EB5EB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4DC48E921C28F174000A2E54 /* Slack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Slack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DC48E9C1C28F174000A2E54 /* Slack iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Slack iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DC48EA11C28F175000A2E54 /* SlackWebTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackWebTests.swift; sourceTree = "<group>"; };
@@ -189,6 +190,7 @@
 				4DC48EA01C28F174000A2E54 /* Tests */,
 				4D52AA871C2A5205006B9E84 /* Frameworks */,
 				4DC48E931C28F174000A2E54 /* Products */,
+				4D62B37E1C34BD42007EB5EB /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -217,10 +219,10 @@
 			isa = PBXGroup;
 			children = (
 				4D52AA941C2A9CA7006B9E84 /* Models */,
-				4DC48EAA1C28F210000A2E54 /* Slack.h */,
-				4DC48EAB1C28F210000A2E54 /* Info.plist */,
 				4DC48EAF1C28F250000A2E54 /* SlackWeb.swift */,
 				4DC48ED11C28F756000A2E54 /* SlackRTM.swift */,
+				4DC48EAA1C28F210000A2E54 /* Slack.h */,
+				4DC48EAB1C28F210000A2E54 /* Info.plist */,
 			);
 			path = Source;
 			sourceTree = "<group>";
